@@ -19,7 +19,7 @@ const Hero = () => {
     const randomIdx = Math.floor(Math.random() * 20);
     const bg = imgUrls.backdrop + data?.results[randomIdx]?.backdrop_path;
     setBackgroundImg(bg);
-  }, [data]);
+  }, [data, imgUrls]);
 
   const handleSumbit = (event) => {
     event.preventDefault();
